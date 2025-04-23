@@ -1,0 +1,127 @@
+@import url(main-style.css);
+
+.about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F6F6;
+    padding: 100px 0;
+    position: relative;
+}
+
+.about-us-main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-info {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.about-info h2 {
+    font-size: 40px;
+    position: relative;
+}
+
+.about-info h2::after {
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 30px;
+    bottom: -8px;
+    left: 0;
+    background-color: #1ED777;
+    border-radius: 10px;
+}
+
+.about-info p {
+    font-size: 17px;
+    text-align: justify;
+}
+
+.about-btn {
+    justify-content: flex-start;
+}
+
+.about-image {
+    width: 48%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+    .about-image {
+        position: relative;
+        width: 100%;
+    }
+    .about-us-main {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .about-info {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-info p {
+        text-align: center;
+    }
+    .about-info h2::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .about-btn {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 875px) {
+    .about-info h2 {
+        font-size: 30px;
+    }
+    .about-info h2::after {
+        width: 35px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    
+    .about-info {
+        align-items: center;
+    }
+
+    .about-info h2 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .about-info h2 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .about-info h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-info p {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,163 @@
+@import url(main-style.css);
+
+.header-div {
+    background-color: #1ED777;
+    font-family: poppins;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 30px 0;
+}
+
+.container-logo a {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.container-logo span {
+    font-size: 30px;
+    color: white;
+}
+
+.container-contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.container-contact-info p {
+    font-size: 17px;
+    color: white;
+    font-weight: 300;
+}
+
+.container-search {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    padding: 10px;
+}
+
+.container-search input {
+    border: none;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+.header-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222B3C;
+}
+
+.header-navbar .container {
+    height: 100%;
+}
+
+.header-navbar a {
+    transition: 0.5s ease-in-out;
+    padding: 20px 28px;
+    display: block;
+}
+
+.header-navbar a:hover {
+    background-color: #1ED777;
+}
+
+.header-navbar nav {
+    width: 100%;
+}
+
+.header-navbar ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-navbar ul li {
+    list-style-type: none;
+
+}
+
+@media screen and (max-width:1240px) {
+    .header-navbar a {
+        padding: 20px 16px;
+    }
+
+    .container-logo a {
+        gap: 10px;
+    }
+
+    .container-search {
+        padding: 6px;
+    }
+
+    .container-search input {
+        font-size: 15px;
+    }
+
+    .container-contact-info {
+        display: none;
+    }
+
+    .container-contact-info p {
+        font-size: 15px;
+    }
+
+
+}
+
+@media screen and (max-width: 1024px) {
+    .header-navbar a {
+        padding: 16px 14px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    
+    .container-contact-info {
+        display: none;
+    }
+
+    .header-div {
+        font-size: 12px;
+    }
+
+    .container-search img {
+        display: none;
+    }
+
+    .header-navbar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .container-search{
+        display: none;
+    }
+}

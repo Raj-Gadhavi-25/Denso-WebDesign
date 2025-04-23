@@ -1,0 +1,151 @@
+@import url(main-style.css);
+
+.blog-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.blog-heading h2 {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+}
+
+.blog-heading h2::after {
+    content: '';
+    position: absolute;
+    height: 8px;
+    width: 35px;
+    background-color: #11E477;
+    bottom: -8px;
+    left: 50%;
+    border-radius: 10px;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-box-container {
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.blog-box {
+    background-color: #F9F8F8;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    transition: 1s ease;
+}
+
+.blog-box:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background-color: white;
+}
+
+.blog-box:hover .blog-box-description p {
+    color: black;
+}
+
+.blog-box:hover .blog-box-circle p {
+    color: white;
+}
+
+.box-1,
+.box-2,
+.box-3 {
+    height: 100%;
+    width: 30%;
+}
+
+.blog-box-image {
+    height: 50%;
+    width: 100%;
+    position: relative;
+}
+
+.blog-box h3 {
+    font-size: 17px;
+    text-align: center;
+}
+
+.blog-box-image img {
+    height: 100%;
+    width: 100%;
+}
+
+.blog-box-circle {
+    position: absolute;
+    bottom: -37px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #11E477;
+    border-radius: 100%;
+    padding: 30px 20px;
+}
+
+.blog-box-circle p {
+    font-size: 17px;
+    font-weight: 900;
+    color: #222B3C;
+    transition: 1s ease;
+}
+
+
+.blog-box-description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 10px;
+}
+
+.blog-box-description p {
+    text-align: center;
+    font-size: 17px;
+    padding: 0 10px;
+    color: #7e7e7e;
+    transition: 1s ease;
+}
+
+@media screen and (768px < width <= 1250px) {
+    .blog-box {
+        width: 44%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .box-1,
+    .box-2,
+    .box-3 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .box-1,
+    .box-2,
+    .box-3 {
+        width: 100%;
+    }
+    .blog-box-container {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .blog-box-description p {
+        font-size: 15px;
+    }
+}

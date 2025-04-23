@@ -1,0 +1,109 @@
+@import url(main-style.css);
+
+.form-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+    width: 100%;
+}
+
+.form-heading {
+    width: 100%;
+}
+
+.form-heading h2 {
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+}
+
+.form-heading h2::after {
+    content: '';
+    position: absolute;
+    height: 8px;
+    width: 35px;
+    background-color: #11E477;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+
+.form-box {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.form-box input, textarea {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding: 8px;
+}
+
+.form-box textarea:focus {
+    outline: none;
+}
+
+#message {
+    resize: none;
+}
+
+.form-box button {
+    width: fit-content;
+}
+
+.form-box .form-message {
+    padding-top: 50px;
+}
+
+.form-button {
+    padding: 20px 64px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background-color: #F97218;
+    transition: 0.8s ease-in-out;
+    margin-top: 50px;
+}
+
+.form-button:hover {
+    background-color: #11E477;
+}
+
+@media screen and (max-width: 991px) {
+    .form-box {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .form-box {
+        width: 100%;
+    }
+    .form-heading h2 {
+        font-size: 32px;
+    }
+    .form-button {
+        padding: 15px 50px;
+    }
+}

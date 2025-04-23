@@ -1,0 +1,75 @@
+@import url(main-style.css);
+
+.text-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+}
+.container-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.container-information h2 {
+    font-size: 40px;
+    font-weight: 600;
+    position: relative;
+    text-align: center;
+}
+
+.container-information h2::after {
+    content: '';
+    position: absolute;
+    height: 8px;
+    width: 45px;
+    background-color: #1ED777;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+
+.container-information-text {
+    width: 80%;
+}
+
+.container-information p {
+    font-size: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 875px) {
+    .container-information h2 {
+        font-size: 30px;
+    }
+    .container-information h2::after {
+        width: 35px;
+    }
+    .container-information-text {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .container-information h2 {
+        font-size: 24px;
+    }
+    .container-information-text {
+        width: 100%;
+    }
+    .container-information-text p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .container-information h2 {
+        font-size: 20px;
+    }
+    .container-information-text p {
+        font-size: 15px;
+    }
+}
